@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Code Runner</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Python Code Runner</h1>
+        </header>
+        <main>
+            <section>
+                <div id="description">
+                    <p>このページでは、Pythonのコードを実行することができます。コードをエディタに入力し、実行ボタンをクリックすると、コンソール出力とオブジェクト出力が表示されます。さらに、オブジェクトの内容をJSONファイルとしてダウンロードすることもできます。</p>
+                </div>
+                <h2>コードエディタ<button id="copyBtn">コピー</button></h2>
+                <textarea id="editor"></textarea>
+                <button id="runBtn">Run</button>
+                <h2>コンソール出力</h2>
+                <pre id="output"></pre>
+                <h2>オブジェクト出力</h2>
+                <pre id="objectOutput"></pre>
+                <button id="downloadBtn">オブジェクトのダウンロード</button>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.21.0/full/pyodide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/python/python.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <script src="main.js"></script>
+</body>
+</html>
+

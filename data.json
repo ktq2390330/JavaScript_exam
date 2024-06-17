@@ -1,0 +1,3 @@
+{
+    "code": "def example():\n    return 'This is example.'\nprint('Enjoy this page !')\nexample()"
+}
